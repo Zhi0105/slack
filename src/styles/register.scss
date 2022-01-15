@@ -1,0 +1,62 @@
+.register-main{
+    height: 100vh;
+
+    // layout
+    display:grid;
+    place-items: center;
+}
+
+.register-main .form-container{
+    background:white;
+    width:auto;
+    height:auto;
+
+    // LAYOUT
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+
+    .register-form-header{
+        grid-row: 1/2;
+        background:rgb(68, 70, 70);
+        color:white;
+        padding:10px;
+
+    }
+
+    .register-form-content{
+        grid-row: 2/3;
+        padding: 20px 10px 20px 10px;
+
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+
+        .name{
+            display:flex;
+            gap:20px;
+        }
+        
+        span{
+            font-weight: bold;
+        }
+
+        @media screen and (max-width:399px){
+            .name{
+                flex-direction: column;
+            }
+        }
+    }
+
+    .register-form-footer{
+        grid-row:3/4;
+        padding:10px;
+        width:100%;
+
+        display:flex;
+        justify-content: center;
+
+        .button{
+            width:100%;
+        }
+    }
+}
