@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const URL = 'http://206.189.91.54/api/v1'
+const URL = 'https://206.189.91.54/api/v1'
 let error = []
     
 //REGISTRATION
